@@ -7,7 +7,7 @@ import random
 async def test_mux(dut):
     """Test for mux2"""
 begin
- sel0=1
+sel0=1
  sel1=1
  sel2=1
  sel3=1
