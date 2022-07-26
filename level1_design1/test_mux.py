@@ -6,9 +6,7 @@ import random
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
-    begin
-         case(sel)
-      5'b00000: out = inp0;  
+     5'b00000: out = inp0;  
       5'b00001: out = inp1;  
       5'b00010: out = inp2;  
       5'b00011: out = inp3;  
@@ -38,8 +36,6 @@ async def test_mux(dut):
       5'b11011: out = inp27;
       5'b11100: out = inp28;
       5'b11101: out = inp29;
-      default: out = 0;
-      endcase
        #input driving
 dut.inp0.value=sel0
 dut.inp1.value=sel1
