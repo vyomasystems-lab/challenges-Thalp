@@ -6,7 +6,7 @@ import random
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
- begin
+begin
  sel0=1
  sel1=1
  sel2=1
