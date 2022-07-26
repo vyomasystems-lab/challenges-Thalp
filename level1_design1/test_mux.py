@@ -2,12 +2,9 @@
 # simple tests for an multiplexer
 import cocotb
 from cocotb.triggers import Timer
-
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
-    begin
-       
        sel0=0:inp0
        sel1=1:inp1
        sel2=1:inp12
