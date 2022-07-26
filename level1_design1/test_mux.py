@@ -72,5 +72,5 @@ dut.inp28.value=sel28
 dut.inp29.value=sel29
 dut.inp30.value=sel30
 dut.inp31.value=sel31
- await Timer(2,units='ns')
- assert dut.sel.value==sel,f"sel result is incorrect:{dut.sel.value}!=sel[4:0]"
+await Timer(2,units='ns')
+assert dut.sel.value==sel,f"sel result is incorrect:{dut.sel.value}!=sel[4:0]"
