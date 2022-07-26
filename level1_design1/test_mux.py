@@ -6,39 +6,39 @@ from cocotb.triggers import Timer
 async def test_mux(dut):
     """Test for mux2"""
     begin
-       case()
-       sel0=0:inp0
-       sel1=1:inp1
-       sel2=1:inp12
-       sel3=1:inp3
-       sel4=0:inp4
-       sel5=1:inp5
-       sel6=0:inp6
-       sel7=1:inp7
-       sel8=0:inp8
-       sel9=1:inp9
-       sel10=1:inp10
-       sel11=1:inp11
-       sel12=0:inp12
-       sel13=1:inp13
-       sel14=1:inp14
-       sel15=0:inp15
-       sel16=1:inp16
-       sel17=1:inp17
-       sel18=1:inp18
-       sel19=0:inp19
-       sel20=1:inp20
-       sel21=1:inp21
-       sel22=0:inp22
-       sel23=1:inp23
-       sel24=0:inp24
-       sel25=1:inp24
-       sel26=0:inp26
-       sel27=1:inp27
-       sel28=0:inp28
-       sel29=0:inp29
-       sel30=1:inp30
-       sel31=0:inp31
+       case(sel)
+      5'b00000: out = inp0;  
+      5'b00001: out = inp1;  
+      5'b00010: out = inp2;  
+      5'b00011: out = inp3;  
+      5'b00100: out = inp4;  
+      5'b00101: out = inp5;  
+      5'b00110: out = inp6;  
+      5'b00111: out = inp7;  
+      5'b01000: out = inp8;  
+      5'b01001: out = inp9;  
+      5'b01010: out = inp10;
+      5'b01011: out = inp11;
+      5'b01101: out = inp12;
+      5'b01101: out = inp13;
+      5'b01110: out = inp14;
+      5'b01111: out = inp15;
+      5'b10000: out = inp16;
+      5'b10001: out = inp17;
+      5'b10010: out = inp18;
+      5'b10011: out = inp19;
+      5'b10100: out = inp20;
+      5'b10101: out = inp21;
+      5'b10110: out = inp22;
+      5'b10111: out = inp23;
+      5'b11000: out = inp24;
+      5'b11001: out = inp25;
+      5'b11010: out = inp26;
+      5'b11011: out = inp27;
+      5'b11100: out = inp28;
+      5'b11101: out = inp29;
+      default: out = 0;
+      endcase
        #input driving
 dut.inp0.value=sel0
 dut.inp1.value=sel1
