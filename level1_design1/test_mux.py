@@ -6,38 +6,40 @@ from cocotb.triggers import Timer
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
-case(sel)
-5'b00000: out = inp0;  
-      5'b00001: out = inp1;  
-      5'b00010: out = inp2;  
-      5'b00011: out = inp3;  
-      5'b00100: out = inp4;  
-      5'b00101: out = inp5;  
-      5'b00110: out = inp6;  
-      5'b00111: out = inp7;  
-      5'b01000: out = inp8;  
-      5'b01001: out = inp9;  
-      5'b01010: out = inp10;
-      5'b01011: out = inp11;
-      5'b01101: out = inp12;
-      5'b01101: out = inp13;
-      5'b01110: out = inp14;
-      5'b01111: out = inp15;
-      5'b10000: out = inp16;
-      5'b10001: out = inp17;
-      5'b10010: out = inp18;
-      5'b10011: out = inp19;
-      5'b10100: out = inp20;
-      5'b10101: out = inp21;
-      5'b10110: out = inp22;
-      5'b10111: out = inp23;
-      5'b11000: out = inp24;
-      5'b11001: out = inp25;
-      5'b11010: out = inp26;
-      5'b11011: out = inp27;
-      5'b11100: out = inp28;
-      5'b11101: out = inp29;
-      #input driving
+       sel0=0
+       sel1=1
+       sel2=1
+       sel3=1
+       sel4=0
+       sel5=1
+       sel6=0
+       sel7=1
+       sel8=0
+       sel9=1
+       sel10=1
+       sel11=1
+       sel12=0
+       sel13=1
+       sel14=1
+       sel15=0
+       sel16=1
+       sel17=1
+       sel18=1
+       sel19=0
+       sel20=1
+       sel21=1
+       sel22=0
+       sel23=1
+       sel24=0
+       sel25=1
+       sel26=0
+       sel27=1
+       sel28=0
+       sel28=1
+       sel29=0
+       sel30=1
+       sel31=0
+       #input driving
 dut.inp0.value=sel0
 dut.inp1.value=sel1
 dut.inp2.value=sel2
