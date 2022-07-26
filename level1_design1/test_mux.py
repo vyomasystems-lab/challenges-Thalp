@@ -7,7 +7,7 @@ import random
 async def test_mux(dut):
     """Test for mux2"""
     begin
-       case(sel)
+         case(sel)
       5'b00000: out = inp0;  
       5'b00001: out = inp1;  
       5'b00010: out = inp2;  
