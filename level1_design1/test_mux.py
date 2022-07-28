@@ -50,30 +50,30 @@ async def test_mux(dut):
      dut.inp7.value=y7;
      dut.inp8.value=y8;
      dut.inp9.value=y9;
-     dut.inp1.value=sel10;
-     dut.inp11.value=sel11;
-     dut.inp12.value=sel12;
-     dut.inp13.value=sel13;
-     dut.inp14.value=sel14;
-     dut.inp15.value=sel15;
-     dut.inp16.value=sel16;
-     dut.inp17.value=sel17;
-     dut.inp18.value=sel18;
-     dut.inp19.value=sel19;
-     dut.inp20.value=sel20;
-     dut.inp21.value=sel21;
-     dut.inp22.value=sel22;
-     dut.inp23.value=sel23;
-     dut.inp24.value=sel24;
-     dut.inp25.value=sel25;
-     dut.inp26.value=sel26;
-     dut.inp27.value=sel27;
-     dut.inp28.value=sel28;
-     dut.inp29.value=sel29;
-     dut.inp30.value=sel30;
-     dut.inp31.value=sel31;
+     dut.inp1.value=y10;
+     dut.inp11.value=y11;
+     dut.inp12.value=y12;
+     dut.inp13.value=y13;
+     dut.inp14.value=y14;
+     dut.inp15.value=y15;
+     dut.inp16.value=y16;
+     dut.inp17.value=y17;
+     dut.inp18.value=y18;
+     dut.inp19.value=y19;
+     dut.inp20.value=y20;
+     dut.inp21.value=y21;
+     dut.inp22.value=y22;
+     dut.inp23.value=y23;
+     dut.inp24.value=y24;
+     dut.inp25.value=y25;
+     dut.inp26.value=y26;
+     dut.inp27.value=y27;
+     dut.inp28.value=y28;
+     dut.inp29.value=y29;
+     dut.inp30.value=y30;
+     dut.inp31.value=y31;
      await Timer(2,units='ns')
-     assert dut.sel.value==sel,f"sel result is incorrect:{dut.sel.value}!=sel[4:0]"
+     assert dut.sel.value==sel,f"sel result is incorrect:{dut.sel.value}!=5'b11111"
 
 
 
