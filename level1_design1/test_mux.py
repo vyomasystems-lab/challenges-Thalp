@@ -8,7 +8,7 @@ async def test_mux(dut):
 
     """Test for mux2"""
     y0=2;
-    sel=5'b00001:y1=1;
+    y1=1;
     sel=5'b00010:y2=4;
     sel=5'b00011:y3=5;
     sel=5'b00100:y4=9;
