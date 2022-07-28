@@ -5,7 +5,7 @@ from cocotb.triggers import Timer
 import random
 @cocotb.test()
 async def test_mux(dut):
-"""Test for mux2"""
+    """Test for mux2"""
 cocotb.log.info('#### CTB: Develop your test here ####')
     #input driving
 dut.inp0.value=y0;
@@ -40,6 +40,8 @@ dut.inp28.value=28;
 dut.inp29.value=29;
 dut.inp30.value=30;
 dut.inp31.value=31;
+
+
 
 await Timer(2,units='ns')
 
