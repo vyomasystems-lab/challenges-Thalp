@@ -6,71 +6,77 @@ import random
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
-begin
-sel0=1
-sel1=1
-sel2=1
-sel3=1
-sel4=1
-sel5=1
-sel6=1
-sel7=0
-sel8=1
-sel9=1
-sel10=1
-sel11=1
-sel12=1
-sel13=0
-sel14=1
-sel15=1
-sel16=1
-sel17=1
-sel18=1
-sel19=0 
-sel20=0
-sel21=1
-sel22=1
-sel23=0
-sel24=1
-sel25=0
-sel26=1 
-sel27=1
-sel28=0
-sel29=1
-sel30=0
-sel31=1
-       #input driving
-dut.inp0.value=sel0
-dut.inp1.value=sel1
-dut.inp2.value=sel2
-dut.inp3.value=sel3
-dut.inp4.value=sel4
-dut.inp5.value=sel5
-dut.inp6.value=sel6
-dut.inp7.value=sel7
-dut.inp8.value=se18
-dut.inp9.value=sel9
-dut.inp1.value=sel10
-dut.inp11.value=sel11
-dut.inp12.value=sel12
-dut.inp13.value=sel13
-dut.inp14.value=sel14
-dut.inp15.value=sel15
-dut.inp16.value=sel16
-dut.inp17.value=sel17
-dut.inp18.value=sel18
-dut.inp19.value=sel19
-dut.inp20.value=sel20
-dut.inp21.value=sel21
-dut.inp22.value=sel22
-dut.inp23.value=sel23
-dut.inp24.value=sel24
-dut.inp25.value=sel25
-dut.inp26.value=sel26
-dut.inp27.value=sel27
-dut.inp28.value=sel28
-dut.inp29.value=sel29
-dut.inp30.value=sel30
-dut.inp31.value=sel31
-await Timer(2,units='ns')
-assert dut.sel.value==sel,f"sel result is incorrect:{dut.sel.value}!=sel[4:0]"
+    cocotb.log.info('### selecting input ###")
+     sel=5'b00000:y0=2;
+     sel=5'b00001:y1=1;
+     sel=5'b00010:y2=4;
+     sel=5'b00011:y3=5;
+     sel=5'b00100:y4=9;
+     sel=5'b00101:y5=3;
+     sel=5'b00110:y6=2;
+     sel=5'b00111:y7=6;
+     sel=5'b01000:y8=9;
+     sel=5'b01001:y9=2;
+     sel=5'b01010:y10=8;
+     sel=5'b01011:y11=2;
+     sel=5'b01100:y12=6;
+     sel=5'b01101:y13=9;
+     sel=5'b01110:y14=2;
+     sel=5'b01111:y15=1;
+     sel=5'b10000:y16=0;
+     sel=5'b10001:y17=9;
+     sel=5'b10010:y18=1;
+     sel=5'b10011:y19=5;
+     sel=5'b10100:y20=7;
+     sel=5'b10101:y21=1;
+     sel=5'b10110:y22=9;
+     sel=5'b10111:y23=4;
+     sel=5'b11000:y24=9;
+     sel=5'b11001:y25=2;
+     sel=5'b11010:Y26=1;
+     sel=5'b11011:y27=0;
+     sel=5'b11100:y28=2;
+     sel=5'b11101:y29=9;
+     sel=5'b11110:y30=2;
+     sel=5'b11111:y31=9;
+     #input driving
+     dut.inp0.value=y0;
+     dut.inp1.value=y1;
+     dut.inp2.value=y2;
+     dut.inp3.value=y3;
+     dut.inp4.value=y4;
+     dut.inp5.value=y5;
+     dut.inp6.value=y6;
+     dut.inp7.value=y7;
+     dut.inp8.value=y8;
+     dut.inp9.value=y9;
+     dut.inp1.value=sel10;
+     dut.inp11.value=sel11;
+     dut.inp12.value=sel12;
+     dut.inp13.value=sel13;
+     dut.inp14.value=sel14;
+     dut.inp15.value=sel15;
+     dut.inp16.value=sel16;
+     dut.inp17.value=sel17;
+     dut.inp18.value=sel18;
+     dut.inp19.value=sel19;
+     dut.inp20.value=sel20;
+     dut.inp21.value=sel21;
+     dut.inp22.value=sel22;
+     dut.inp23.value=sel23;
+     dut.inp24.value=sel24;
+     dut.inp25.value=sel25;
+     dut.inp26.value=sel26;
+     dut.inp27.value=sel27;
+     dut.inp28.value=sel28;
+     dut.inp29.value=sel29;
+     dut.inp30.value=sel30;
+     dut.inp31.value=sel31;
+     await Timer(2,units='ns')
+     assert dut.sel.value==sel,f"sel result is incorrect:{dut.sel.value}!=sel[4:0]"
+
+
+
+
+       
+
