@@ -41,7 +41,8 @@ dut.inp29.value=29;
 dut.inp30.value=30;
 dut.inp31.value=31;
 def jls_extract_def():
-    return await Timer
+    jls_extract_var = await Timer
+    return jls_extract_var
 
 
 jls_extract_def()(1,units='ns')
