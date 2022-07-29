@@ -42,9 +42,3 @@ dut.inp30.value=30;
 dut.inp31.value=31;
 return await Timer
 assert dut.sel.value==sel,f"sel result is incorrect:{dut.sel.value}!=5'b11111"
-
-
-
-
-       
-
