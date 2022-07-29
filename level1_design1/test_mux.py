@@ -11,7 +11,7 @@ async def test_mux(dut):
     cocotb.log.info('#### CTB: Develop your test here ####')
     inp0=2;
     inp1=1;
-    inp2=5;
+    inp2=3;
     inp3=6;
     inp4=7;
     inp5=8;
