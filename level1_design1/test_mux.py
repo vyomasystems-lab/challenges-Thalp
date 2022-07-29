@@ -17,7 +17,7 @@ async def test_mux(dut):
     inp5=1;
     inp6=2;
     inp7=3;
-    inp8=1;
+    inp8=5;
     inp9=2;
     inp10=3;
     inp11=1;
