@@ -3,9 +3,12 @@
 import cocotb
 from cocotb.triggers import Timer
 import random
+
 @cocotb.test()
 async def test_mux(dut):
     """Test for mux2"""
+
+    cocotb.log.info('#### CTB: Develop your test here ####')
     inp0=2;
     inp1=4;
     inp2=5;
