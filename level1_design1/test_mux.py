@@ -38,6 +38,7 @@ async def test_mux(dut):
     inp30=7;
     inp31=2;
 
+    #input driving
     dut.inp0.value=inp0
     dut.inp1.value=inp1
     dut.inp2.value=inp2
