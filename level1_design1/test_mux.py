@@ -43,7 +43,7 @@ async def test_mux(dut):
 
     #input driving
     dut.inp0.value=inp0
-    dut.inp1.value=inp1
+    dut.inp1.value=4
     dut.inp2.value=inp2
     dut.inp3.value=inp3
     dut.inp4.value=inp4
