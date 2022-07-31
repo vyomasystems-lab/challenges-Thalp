@@ -82,8 +82,8 @@ always @(enc_y0 or enc_y1 or enc_y2 or enc_y3 or enc_y3 or enc_y4 or enc_y5 or e
 				 8'b0000001))))))));
  // scheduling output signals
  //
- assign out_a2value = { mav_putvalue_enc_y7|mav_putvalue_enc_y6|mav_putvalue_enc_y5|mav_putvalue_enc_y4};
- assign out_a1value = { mav_putvalue_enc_y7|mav_putvalue_enc_y6|mav_putvalue_enc_y3|mav_putvalue_enc_y2};
- assign out_a0value = { mav_putvalue_enc_y7|mav_putvalue_enc_y5|mav_putvalue_enc_y3|mav_putvalue_enc_y1};
+ assign out_a2value = { enc_y7|enc_y6|enc_y5|enc_y4};
+ assign out_a1value = { enc_y7|enc_y6|enc_y3|enc_y2};
+ assign out_a0value = { enc_y7|enc_y5|enc_y3|enc_y1};
  assign RDY_out ={out_a2value,out_a1value,out_a0value};
  endmodule
