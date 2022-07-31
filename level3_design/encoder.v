@@ -18,14 +18,7 @@
 // out RDY_out      3bits
 //
 // encoded information signal from input to output ports
-//  (enc_y7,
-     enc_y6,
-     enc_y5,
-     enc_y4,
-     enc_y3,
-     enc_y2,
-     enc_y1,
-     enc_y0) ->out_a0value,out_a1value,out_a2value
+// (enc_y7, enc_y6,enc_y5, enc_y4,enc_y3,enc_y2,enc_y1,enc_y0) ->out_a0value,out_a1value,out_a2value
 // input Ports ,output ports declaration 
 module encoder(enc_y7,
      enc_y6,
