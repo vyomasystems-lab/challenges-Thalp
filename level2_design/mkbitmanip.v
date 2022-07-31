@@ -42,8 +42,7 @@
 
 module mkbitmanip(CLK,
 		  RST_N,
-
-		  mav_putvalue_instr,
+          mav_putvalue_instr,
 		  mav_putvalue_src1,
 		  mav_putvalue_src2,
 		  mav_putvalue_src3,
