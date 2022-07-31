@@ -64,21 +64,21 @@ reg RDY_out;
 always @(enc_y0 or enc_y1 or enc_y2 or enc_y3 or enc_y3 or enc_y4 or enc_y5 or enc_y6 or enc_y7 )
 //
   assign EN_enc=
-	       (mav_putvalue_enc_y7 ?
+	       (enc_y7 ?
 	       8'b10000000 :
-	       (mav_putvalue_enc_y6 ?
+	       (enc_y6 ?
 		     8'b01000000 :
-		     (mav_putvalue_enc_y5 ?
+		     (enc_y5 ?
 		     8'b00100000 :
-		     (mav_putvalue_enc_y4 ?
+		     (enc_y4 ?
 			   8'b00010000 :
-			   (mav_putvalue_enc_y3 ?
+			   (enc_y3 ?
 			   8'b00001000 :
-			   (mav_putvalue_enc_y2 ?
+			   (enc_y2 ?
 			   8'b0000100 :
-			   (mav_putvalue_enc_y1 ?
+			   (enc_y1 ?
 				 8'b0000010 :
-				 (mav_putvalue_enc_y0 ?
+				 (enc_y0 ?
 				 8'b0000001))))))));
  // scheduling output signals
  //
