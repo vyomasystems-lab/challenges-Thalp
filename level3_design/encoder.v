@@ -60,9 +60,9 @@ reg RDY_out;
 
 // based on the input signal resultant output signal wil be Generated
 // for resultant 1'd5 output signal the  input signal will be 8'b00100000  
- // scheduling encoding signals
- always @(enc_y0 or enc_y1 or enc_y2 or enc_y3 or enc_y3 or enc_y4 or enc_y5 or enc_y6 or enc_y7 )
-  //
+// scheduling encoding signals
+always @(enc_y0 or enc_y1 or enc_y2 or enc_y3 or enc_y3 or enc_y4 or enc_y5 or enc_y6 or enc_y7 )
+//
   assign EN_enc=
 	       (mav_putvalue_enc_y7 ?
 	       8'b10000000 :
