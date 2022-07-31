@@ -29,6 +29,3 @@ async def test_encoder(dut):
     dut.enc_y0.value=enc_decla_y0
 
     await Timer(1,units='ns')
-
-    
-    assert out.value==0,f"encoder result is incorrect:{dut.out.value!=1}"
