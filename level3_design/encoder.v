@@ -54,25 +54,15 @@ reg RDY_out;
 // based on the input signal resultant output signal wil be Generated
 // for resultant 1'd5 output signal the  input signal will be 8'b00100000  
 // scheduling encoding signals
-always @(enc_y0 or enc_y1 or enc_y2 or enc_y3 or enc_y3 or enc_y4 or enc_y5 or enc_y6 or enc_y7 )
-//
-  assign EN_enc=
-	       (enc_y7 ?
-	       8'b10000000 :
-	       (enc_y6 ?
-		     8'b01000000 :
-		     (enc_y5 ?
-		     8'b00100000 :
-		     (enc_y4 ?
-			   8'b00010000 :
-			   (enc_y3 ?
-			   8'b00001000 :
-			   (enc_y2 ?
-			   8'b0000100 :
-			   (enc_y1 ?
-				 8'b0000010 :
-				 (enc_y0 ?
-				 8'b0000001))))))));
+
+  assign enc_y7=8'b10000000;
+  assign enc_y6=8'b01000000;
+  assign enc_y5=8'b00100000;
+  assign enc_y4=8'b00010000;
+  assign enc_y3=8'b00001000;
+  assign enc_y2=8'b00000100;
+  assign enc_y1=8'b0000010;
+  assign enc_y0=8'b0000001;
  // scheduling output signals
  //
  assign out_a2value = { enc_y7|enc_y6|enc_y5|enc_y4};

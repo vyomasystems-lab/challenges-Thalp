@@ -3504,8 +3504,8 @@ module mkbitmanip(CLK,
 		 _theResult_____1__h33781[12:11],
 		 2'd0,
 		 _theResult_____1__h33781[8:7],
-		 2'd0,
-		 _theResult_____1__h33781[4:3],
+		 2'd0,clear
+         _theResult_____1__h33781[4:3],
 		 2'd0 } |
 	       { 1'd0,
 		 _theResult_____1__h33781[29],
