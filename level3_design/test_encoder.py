@@ -9,14 +9,14 @@ async def test_encoder(dut):
     """Test for encoder"""
 
     cocotb.log.info('#### CTB: Develop your test here ####')
-    enc_decla_y7=0,
-    enc_decla_y6=1,
-    enc_decla_y5=1,
-    enc_decla_y4=1,
-    enc_decla_y3=0,
-    enc_decla_y2=1,
-    enc_decla_y1=1,
-    enc_decla_y0=1,
+    enc_decla_y7=0;
+    enc_decla_y6=1;
+    enc_decla_y5=1;
+    enc_decla_y4=1;
+    enc_decla_y3=0;
+    enc_decla_y2=1;
+    enc_decla_y1=1;
+    enc_decla_y0=1;
     
     #input driving
     dut.enc_y7.value=enc_decla_y7
