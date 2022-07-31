@@ -17,7 +17,7 @@
 // out_a0value      1bits
 // out RDY_out      3bits
 //
-// encoded information signal from input to output ports:
+// encoded information signal from input to output ports
 //  (enc_y7,
      enc_y6,
      enc_y5,
