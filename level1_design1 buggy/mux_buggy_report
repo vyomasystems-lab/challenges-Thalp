@@ -1,0 +1,21 @@
+## multiplexer is a combinational circuit in order to reduce the number of logic gates ,
+## in the same circuit we can implemnt  boolean function with the help of selction lines.
+
+in order to select the required "output" selection lines are used for example 4:2 Multiplexers,
+to select the combination of the thrid input ,both selection lines  will be active high .
+selction combinations ~a~b,~ab,a~b,ab with input0,input1,input2,input3.
+
+Test scenario:
+for 16 inputs to the multiplexer in the source code , 16 values are declared in  the test case with 
+help decalration names that to be driven to the source file
+input driving will sync the inputs declared in the test case to the source file .
+design under test(dut) .inp0.value ,implies the values we are declaring in the the test case
+we directly mention  the value to the source file.
+await will act as edge trigger and will mention the delay to the model.
+the inputs declared in the source file ,for each input it is  2bit size where possible combinations will 
+be fourinputs and twoselection line and one output
+solution:
+if the input declared in 3bit size   then the resultant output will be overflow error ,in order to 
+rectify the error we can use if else statement if the input declared beyond the size of the input size
+else statement declare the default value. 
+
