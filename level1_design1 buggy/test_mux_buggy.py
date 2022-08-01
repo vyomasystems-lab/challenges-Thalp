@@ -76,6 +76,4 @@ async def test_mux(dut):
     
     await Timer(1,units="ns")
 
-    assert dut.out.value==0,f"Mux result is incorrect:{dut.out.value!=1}"
-
-    
+    assert dut.out.value==0,f"Mux result is incorrect:{dut.out.value!=1}"   
