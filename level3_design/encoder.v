@@ -63,7 +63,7 @@ reg out_a0value;
   assign enc_y0=8'b00000001;
  // scheduling output signals
  //
- assign out_a3value ={1};
+ assign out_a3value =1;
  assign out_a2value = { enc_y7|enc_y6|enc_y5|enc_y4};
  assign out_a1value = { enc_y7|enc_y6|enc_y3|enc_y2};
  assign out_a0value = { enc_y7|enc_y5|enc_y3|enc_y1};
