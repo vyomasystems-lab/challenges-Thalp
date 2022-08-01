@@ -1,0 +1,38 @@
+Abstract
+Encoder is a combinational logic circuit contains the logic gates whose output is determined 
+by the combination of current inputs. 
+It comprises logic gates, input variables, and output variables. 
+No feedback is required. No memory is required Encoder is used to reduce the number of bits needed 
+to represent given information signal. Thus, the transmission link uses fewer lines to transmit the encoded information.
+Since encoded data is smaller in size, you should be able to save space on your storage devices.
+but a standard digital encoder has one limitation that it would produce an error its output 
+if more than one input is active at a given time. It generates an undefined combination of outputs,
+if the two inputs are logic 1 simultaneously.
+Here, the input MSB (most significant bits) has the highest priority, whereas the input, LSB (least significant bits) has the lowest priority. 
+In priority encoder, even if more than one input is ‘1’ at the same time, 
+the output will be the binary code corresponding to the input, which is having “higher priority”.
+We considered one more output, V in order to know, whether the code available at outputs is valid or not. 
+If at least one input of the encoder is ‘1’, then the code available at outputs is a valid 
+INTRODUCTION 
+To minimize the number of bits per unit time required to represent the source output, it is a combinational circuit that converts information signal into the coded format it used to reduce the number of bits needed to represent given information. For example, 4 bits information signal represented by “2” bits it is sufficient for the transmission using encoding it include redundant bits to the source bits, these redundant bits facilitate the detection and correction of transmission errors encoders are used for transmitting the information. Thus, the transmission link uses fewer lines to transmit the encoded information. To identify the error in receiver signal different techniques are utilized to identify the error in the decoded signal 
+Boolean function for each output:
+A2=Y7+Y6+Y5+Y4
+A1=Y7+Y6+Y3+Y2
+A0=Y7+Y5+Y3+Y1
+
+verification strategy:
+encoded information is verified with help of the  minimized boolean function ,with the inputs given 
+resultant will be generated 
+example:
+to generate as 110[A2A1A0] respective inputs will be the or function resultant sum will be the output
+to the bit 
+A2 to be active high [1] y7 or y6 or y5 or y4 will be active
+Bugs found
+in order to transmit the 3bit size if transfer exactly 3 bit size if there error in the transmitted 
+data it would be very difficult to decode the correct information transmitted signal.
+ Debug Information:
+to transmit the information signal in error free transmission, for 3bit size information signal if 
+we transfer it in 4bit size , in the decoding extra bit will able to detect the error and no error 
+present in the information signal .in the encoding the first 8 bits of information signal the  error
+will be present ,error will not occur to the information signal by adding redudancy bits to it 
+syndrome technique is uded to rectify the error and indentify the error where it present   
