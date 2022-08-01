@@ -12,8 +12,8 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
             inp21, inp22, inp23, inp24, inp25, inp26,
             inp27, inp28, inp29, inp30;
 
-  output [7:0] out;
-  reg [7:0] out;
+  output [1:0] out;
+  reg [1:0] out;
 
   // Based on sel signal value, one of the inp0-inp30 gets assigned to the 
   // output signal
