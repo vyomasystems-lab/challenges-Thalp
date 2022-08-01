@@ -6,8 +6,8 @@ PWD=$(shell pwd)
 
 VERILOG_SOURCES = $(PWD)/mux buggy.v
 
-TOPLEVEL := mux buggy         # design
-MODULE   := mux debuggy     # test
+TOPLEVEL := mux_buggy         # design
+MODULE   := mux_buggy     # test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
 
