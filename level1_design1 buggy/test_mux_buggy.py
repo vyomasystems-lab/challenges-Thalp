@@ -24,21 +24,21 @@ async def test_mux(dut):
     inp12=2;
     inp13=3;
     inp14=2;
-    inp15=1;
+    inp15=5;
     inp16=2;
     inp17=3;
     inp18=3;
     inp19=2;
     inp20=1;
     inp21=3;
-    inp22=2;
+    inp22=7;
     inp23=1;
     inp24=3;
     inp25=1;
     inp26=2;
     inp27=3;
     inp28=3;
-    inp29=1;
+    inp29=7;
     inp30=3;
     inp31=2;
 
