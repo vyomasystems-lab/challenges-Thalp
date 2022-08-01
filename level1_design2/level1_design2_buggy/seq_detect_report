@@ -1,0 +1,16 @@
+ sequence detector accepts as input a string of bits: either 0 or 1.
+ Its output goes to 1 when a target sequence has been detected
+
+in order to generate the sequence the sequence generator uses the 1011
+await triggers uses in order to raise or fall the values of the with the 
+help of positve edge and negative edge 
+
+in order to generatethe sequence 10111 , the value declared to the input 
+await will declares the value either its active high or active low.
+it will be rising edge for active high ,it will be falling edge for active low 
+
+in order to generate 1011 ,in test case we declaring values wrongly it leads to the error 
+in the  below instead of declaring the value as 0(active low ) declaring as 1,it leads to the
+error it lead to unreliable  eror 
+dut.inp_bit.value=1
+await FallingEdge(dut.clk)
