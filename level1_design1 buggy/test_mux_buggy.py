@@ -9,6 +9,7 @@ async def test_mux(dut):
     """Test for mux2"""
 
     cocotb.log.info('#### CTB: Develop your test here ####')
+    ## inputs overflow error 
     inp0=0;
     inp1=1;
     inp2=3;
